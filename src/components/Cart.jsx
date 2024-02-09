@@ -1,9 +1,9 @@
 import { useContext } from "react";
 
-import { CartContext } from "../store/shopping-card-context";
+import { CartContext } from "../store/shopping-cart-context";
 
 export default function Cart() {
-  //const CardCtx = useContext(CartContext); We can also destructure this component ↡
+  //const CartCtx = useContext(CartContext); We can also destructure this component ↡
   const { items, updateItemQuantity } = useContext(CartContext);
 
   const totalPrice = items.reduce(
